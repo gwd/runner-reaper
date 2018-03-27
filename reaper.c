@@ -27,11 +27,14 @@ int main(int argc, char * argv) {
         return -1;
     }
 
+    printf("Sleeping for 1 second to get the runner a chance to kill me...\n");
+    usleep(1000000);
+    
     rc = kill(-1, 9);
     if ( rc )
         perror("No processes killed");
     else
-        printf("At least one process killed successfully!");
+        printf("At least one process killed successfully!\n");
 
     return 0;
 }

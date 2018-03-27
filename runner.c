@@ -22,7 +22,7 @@ int main(int argc, char * argv) {
     }
 
     while(1) {
-        if(fork())
+        if(!fork())
             kill(-1, 9);
         else
             _exit(0);
