@@ -1,0 +1,6 @@
+#ifndef COMMON_H
+
+#define DEFAULT_TARGET_UID 32768
+#define DEFAULT_REAPER_UID 32769
+
+#endif /* COMMON_H */
