@@ -21,6 +21,8 @@ int main(int argc, char * argv) {
         return -1;
     }
 
+    /** At this point the process is untrusted **/
+    
     while(1) {
         if(!fork())
             kill(-1, 9);
